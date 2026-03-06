@@ -128,22 +128,6 @@ html, body { height: 100%; font-family: 'Inter', sans-serif; overflow: hidden; b
 <div class="layout">
   <div class="left">
     <div class="scene-wrap">
-
-      <!--
-        LAYOUT (viewBox 0 0 560 480, baseline y=480):
-        ┌──────────────────────────────────┐
-        │  Orange semicircle: LEFT side    │
-        │  x-center=110, radius=160        │
-        │  Top of arc ≈ y=320 → visible!   │
-        │                                  │
-        │  Purple: x=130,y=100 w=150 h=380 │
-        │  Black:  x=258,y=210 w=120 h=270 │
-        │  Yellow: x=355,y=270 w=110 h=210 │
-        └──────────────────────────────────┘
-
-        Draw order: Orange(back) → Purple → Black → Yellow(front)
-        Orange is LEFT of purple, so it sticks out visibly.
-      -->
       <svg id="sceneSVG" viewBox="0 0 560 480"
            xmlns="http://www.w3.org/2000/svg" overflow="visible">
 
@@ -158,12 +142,6 @@ html, body { height: 100%; font-family: 'Inter', sans-serif; overflow: hidden; b
           <clipPath id="cpOR"><circle cx="130" cy="358" r="9"/></clipPath>
         </defs>
 
-        <!-- ════════════════════════════════════════
-             ORANGE SEMICIRCLE  (drawn first = back layer)
-             Sits at BOTTOM-LEFT, sticking out left of purple.
-             Center (110, 480), radius 160 → top at y=320
-             Occupies x: -50 to 270  (left quarter of scene)
-        ═════════════════════════════════════════ -->
         <g id="gOrange">
           <!-- Semicircle body: arc from (-50,480) to (270,480) -->
           <path d="M -50,480 A160,160 0 0,1 270,480 Z" fill="#F4782A"/>
@@ -328,7 +306,7 @@ html, body { height: 100%; font-family: 'Inter', sans-serif; overflow: hidden; b
 <div class="success-screen" id="successScreen">
   <div class="success-icon">🎉</div>
   <div class="success-h">You're in!</div>
-  <div class="success-p">Welcome back to WeStud.</div>
+  <div class="success-p">Welcome back to My Website!</div>
 </div>
 <canvas id="confettiCanvas"></canvas>
 

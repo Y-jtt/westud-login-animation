@@ -21,6 +21,8 @@
 
 Open `westud-login.html` directly in any modern browser. No build step. No server. No npm.
 
+![alt text](image.png)
+
 | Field | Value |
 |-------|-------|
 | Email | `test@westud.com` |
