@@ -155,7 +155,7 @@ If you have any questions or suggestions, please feel free to contact us:
 
 <div align="center">
 
-**© Jintao Yang 2025 | westud-login-animation**
+**© Jintao Yang 2026 | westud-login-animation**
 
 </div>
 
